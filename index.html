@@ -10,7 +10,10 @@
       }
     </style>
     <script src="OpenLayers.js"></script>
-    <script>
+  </head>
+  <body onload="init();">
+    <div id="basicMap"></div>
+      <script>
       function init() {
         map = new OpenLayers.Map("basicMap");
         var mapnik         = new OpenLayers.Layer.OSM();
@@ -22,9 +25,5 @@
         map.addLayer(mapnik);
         map.setCenter(position, zoom );
       }
-    </script>
-  </head>
-  <body onload="init();">
-    <div id="basicMap"></div>
-  </body>
+    </script>  </body>
 </html>
